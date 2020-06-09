@@ -1,4 +1,4 @@
-# Test Electron Forge
+# Electron Forge test app v.1.0.1
 
 Electron Forge: https://www.electronforge.io/
 
@@ -10,7 +10,7 @@ https://www.electronjs.org/docs/api/browser-window
 
 cd ..
 
-npx create-electron-app efapp
+# npx create-electron-app efapp
 
 cd efapp
 
