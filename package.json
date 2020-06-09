@@ -1,0 +1,69 @@
+{
+  "name": "EFapp",
+  "productName": "EFapp",
+  "version": "1.0.1",
+  "description": "My Electron (Forge) application description",
+  "main": "src/index.js",
+  "scripts": {
+    "app": "electron src/index.js",
+    "build": "electron-builder",
+    "pack": "electron-packager .",
+    "packager": "electron-packager . --all",
+    "postinstall": "electron-builder install-app-deps",
+    "rebuild": "electron-rebuild",
+    "go": "electron .",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Denis",
+    "email": "saturnych@gmail.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "efapp"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.1.8",
+    "electron-squirrel-startup": "^1.0.0",
+    "fs-extra": "^9.0.1",
+    "js-md5": "^0.7.3",
+    "nedb": "^1.8.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.51",
+    "@electron-forge/maker-deb": "6.0.0-beta.51",
+    "@electron-forge/maker-rpm": "6.0.0-beta.51",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.51",
+    "@electron-forge/maker-zip": "6.0.0-beta.51",
+    "electron": "9.0.2"
+  }
+}
