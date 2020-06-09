@@ -53,5 +53,5 @@ try {
   });
 
 } catch (e) {
-  if (typeof(config)!=='undefined' && config.debug) console.log(`preload error: "${e}"`);
+  if (typeof(config)!=='undefined' && config.debug) console.error(`preload error: "${e}"`);
 }
