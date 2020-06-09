@@ -5,7 +5,6 @@
 try {
 
   var config = { debug: false };
-  config.debug = (process && process.env && process.env.NODE_ENV && process.env.NODE_ENV === 'dev');
   if (config.debug) console.log("preload config: \n", JSON.stringify(config,null,2));
 
   window.addEventListener('DOMContentLoaded', () => {
