@@ -7,9 +7,6 @@ Habr: https://habr.com/ru/company/ruvds/blog/436466/
 https://www.electronjs.org/docs/api/browser-window
 
 # steps:
-
-cd ..
-
 # npx create-electron-app efapp
 
 cd efapp
